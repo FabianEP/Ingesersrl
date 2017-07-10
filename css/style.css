@@ -128,6 +128,54 @@ ul.nav{
 .navbar-default .navbar-toggle {
   border-color: #000;
 }
+/*banner trabajo area*/
+
+.bannertrabajo{
+	background: url(../img/wwa.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 50px;
+
+	width: 100%;
+
+	text-align: center;
+	box-sizing: border-box;
+	transition: .5s;
+}
+.bannertrabajo-bg{
+	background-color: rgba(100,100,100,0.75);
+	transition: .5s;
+
+		padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+
+}
+
+.bannertrabajo-bg:hover{
+	background-color: rgba(0,0,0,0.8);
+	transition: .5s;
+
+}
+
+.bannertrabajo h3{
+	color: #fff;
+	font-size: 32px;	
+}
+
+.bannertrabajo a{
+	text-decoration: none;
+	margin-left: 20px;
+	font-weight: bold;
+	color:#fff;
+	border-bottom: transparent;
+}
+
+
 
 /*banner area*/
 .bg-color
@@ -557,7 +605,8 @@ ul.nav{
 
 /*Custom contact area */
 #contacto {
-	padding : 50px 0;
+	padding-top: 75px;
+	padding-bottom: 10px;
 	font-family : 'Lato', sans-serif;
 	background : #fff;
 	z-index: -1000;
@@ -615,8 +664,7 @@ ul.nav{
 }
 
 .cnt_work {
-	width: 25%;
-	float:right;
+
 }
 
 /* Concact Form */
@@ -782,13 +830,7 @@ input[type=submit] {
 }
 
 .cnt_work {
-	width: 50%;
-	float:right;
-	color: #666666;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding-top: 30px;
+
 }
 
 #message {
@@ -796,7 +838,7 @@ input[type=submit] {
 }
 
 .map_area {
-	margin-bottom : 93px;
+	margin-bottom : 30px;
 }
 
 /*map section*/
