@@ -374,6 +374,7 @@
      $(".cnt_work").click(function(e){
           e.preventDefault();
           document.getElementById("ltd_map_sec").style.zIndex = "-1";
+          document.getElementById("servicios").style.zIndex = "-1";
           if(window.matchMedia("(max-width: 570px)").matches) {
             $("#trabajar")
 
@@ -386,6 +387,7 @@
 
       $('.close').click(function() {
          $("#WorkWithUs").fadeOut(300);
+         document.getElementById("servicios").style.zIndex = "auto";
       });
 
       $("#WorkWithUs").on('blur',function(){
@@ -399,7 +401,6 @@
 				var frm = document.getElementById("contact-form");
 				frm.reset();
 				alert("Gracias por su consulta, nos pondremos en contacto a la brevedad.");
-				//document.getElementById("contact-form").innerHTML = xhr.responseText;
 		};
 		$action="sendContactEmail.php";
 		xhr.open (oFormElement.method, $action, true);

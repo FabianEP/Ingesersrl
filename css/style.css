@@ -866,7 +866,6 @@ color : #3399FF;
 /* Servicios */
 #servicios {
 	overflow-x: hidden;
-    z-index: -1;
     position: relative;
 }
 
