@@ -269,16 +269,18 @@ ul.nav{
 }
 .banner img{
 	position: relative;
-	margin-top:180px;
-	margin-left:320px;
+	left: 50%;
+    top: 50%;
+    margin-top: 25%;
 }
 
 @media (max-width: 767px) 
 {
 	.banner img{
 		position: relative;
-		margin-top:180px;
-		margin-left:120px;
+	    top: 50%;
+		left: 50%;
+		margin-top: 95%;
 	}
 }
 
@@ -1181,7 +1183,7 @@ textarea {
 }
 
 .cta-txt {
-	margin-left: 150px;
+	margin-left: 10%;
 }
 
 .cta-txt h3 {
