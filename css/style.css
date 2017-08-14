@@ -28,7 +28,7 @@ h4{
 	font-weight: 700;
 }
 h2{
-	font-size: 36px;
+	font-size: 6em;
 	color: #1a1a1a;
 	font-weight: 600;
 	margin-bottom: 25px;
@@ -96,7 +96,7 @@ ul.nav{
 	padding: 0;
 }
 .navbar-default .navbar-nav>li>a {
- 	font-size: 16px;
+ 	font-size: 2.5em;
 	color: #000;
 	text-transform: capitalize;
 	transition: all .7s ease 0s;
@@ -155,7 +155,7 @@ ul.nav{
 
 .bannertrabajo h3{
 	color: #fff;
-	font-size: 32px;	
+	font-size: 6em32px;	
 }
 
 .bannertrabajo a{
@@ -322,11 +322,11 @@ ul.nav{
 }
 /*details area*/
 .details {
-	padding-top : 50px;
+	padding-top: 15px;
 	background-color: #BDBDBD;
 }
 .details p{
-	font-size: 18px;
+	font-size: 3em;
 	color: #151515;
 	margin: 30px 0;
 }
@@ -345,7 +345,7 @@ ul.nav{
 	width: 30px;
 }
 .details h1{
-	font-size: 36px;
+	font-size: 6em;
     color: #1a1a1a;
     font-weight: 600;
     margin-bottom: 25px;
@@ -363,7 +363,7 @@ ul.nav{
 	color: #D8D8D8;
 }
 .feature-detail p{
-	font-size: 18px;
+	font-size: 3em;
 	margin-top: 20px;
 	color: #D8D8D8;
 }
@@ -635,7 +635,7 @@ ul.nav{
 
 /*Custom contact area */
 #contacto {
-	padding-top: 75px;
+	padding-top: 30px;
 	padding-bottom: 10px;
 	font-family : 'Lato', sans-serif;
 	background : #fff;
@@ -645,9 +645,11 @@ ul.nav{
 #contacto p {
 	color : #666666;
 	font-family : "Lato", sans-serif;
-	font-size : 14px;
+	font-size : 2.5em;
 	letter-spacing : 1px;
-	}
+	margin-left: 40px;
+    text-indent: -40px;
+}
 
 #cnt_form .btn {
 	background : #353638;
@@ -753,18 +755,18 @@ ul.nav{
 }
 
 #WorkWithUs .lbl-control-BornDate {
-	width: 150px;
+	width: 12em;
 	text-align: -webkit-left;
 }
 #WorkWithUs .lbl-control-Area {
-	width: 120px;
+	width: 12em;
 	text-align: -webkit-left;
 }
 #WorkWithUs .form-control-slc-Area {
-	width: 353px !important;
+	width: 18.25em !important;
 	display: block;
 	padding: 6px 12px;
-    font-size: 14px;
+    font-size: 2.5em;
     line-height: 1.42857143;
     color: #b4b4b4;
     background-color: #fff;
@@ -778,10 +780,10 @@ ul.nav{
 }
 
 #WorkWithUs .form-control-BornDate {
-	width: 323px;
+	width: 18.25em;
 	display: block;
 	padding: 6px 12px;
-    font-size: 14px;
+    font-size: 2.5em;
     line-height: 1.42857143;
     color: #b4b4b4;
     background-color: #fff;
@@ -813,7 +815,7 @@ ul.nav{
 	float: left;
     color: #b4b4b4;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 2.5em;
     line-height: 50px;
 }
 
@@ -1179,6 +1181,7 @@ color : #3399FF;
 /* Forms
 ---------------------------------- */
 .form-control {
+	font-size: 2.5em;
 	height: 45px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -1246,7 +1249,6 @@ textarea {
 	background-color: RGBA(200, 200, 200, 0.8);
 	width: auto;
   	height: auto;
-  	padding-top: 50px;
   	padding-bottom: 20px;
   	overflow-x: hidden;
 }
@@ -1400,16 +1402,17 @@ a, a:hover
 }
 .cont-title
 {
-	font-size: 24px;
+	font-size: 4em;
 }
 .location-info p span {
     display: inline-block;
 }
 .location-info p span {
     width: 40px;
-    font-size: 24px;
+    font-size: 2em;
     color: #666;
-    vertical-align: middle;
+	vertical-align: middle;
+	text-indent: initial;
 }
 .location-info p {
     margin-bottom: 5px;
