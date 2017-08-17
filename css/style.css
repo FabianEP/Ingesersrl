@@ -207,7 +207,7 @@ ul.nav{
 }
 
 .banner {
-	background: url(../img/p2.jpg);
+	background: url(../img/banner.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
@@ -323,12 +323,12 @@ ul.nav{
 /*details area*/
 .details {
 	padding-top: 15px;
-	background-color: #BDBDBD;
+	background:#989898;
 }
 .details p{
-	font-size: 3em;
+	font-size: 2.8em;
 	color: #151515;
-	margin: 30px 0;
+	margin-top: 20px;
 }
 .details ul{
 	margin: 0;
@@ -351,20 +351,33 @@ ul.nav{
     margin-bottom: 25px;
     margin-top: 30px;
 }
+.details h2{
+	margin-bottom: 10px;
+	color: #151515;
+}
 
 /*feature-detail area*/
 .feature-detail{
 	padding-top : 20px;
-	background:-webkit-gradient(linear, 0% 45%, 0% 0%, from(#383735), to(#989898));
+	background:-webkit-gradient(linear, 0% 60%, 0% 0%, from(#383735), to(#989898));
 	
 }
 .feature-detail h2{
 	margin-bottom: 10px;
 	color: #D8D8D8;
 }
+
+.feature-detail h1{
+	font-size: 3.4em;
+    color: #D8D8D8;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
 .feature-detail p{
-	font-size: 3em;
-	margin-top: 20px;
+	font-size: 2.5em;
+	margin-top: 15px;
 	color: #D8D8D8;
 }
 .horizontal-phone img{
