@@ -285,8 +285,8 @@ svg {
 .slide__text-desc {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
 }
+
 @media (max-width: 991px) {
   .slide__text-desc {
     display: none;
