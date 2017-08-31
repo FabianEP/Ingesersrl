@@ -567,12 +567,34 @@
 			});
 			
 			$("#flexiselDemo3").flexisel({
-				visibleItems: 6,
+				visibleItems: 5,
 				itemsToScroll: 1,
 				autoPlay: {
 						enable: true,
 						interval: 1500,
 						pauseOnHover: false
+				},
+				responsiveBreakpoints: { 
+					portrait: { 
+							changePoint:481,
+							visibleItems: 1,
+							itemsToScroll: 1
+					}, 
+					landscape: { 
+							changePoint:641,
+							visibleItems: 2,
+							itemsToScroll: 2
+					},
+					tablet: { 
+							changePoint:769,
+							visibleItems: 3,
+							itemsToScroll: 3
+					},
+					ipad: { 
+	                    changePoint:1025,
+	                    visibleItems: 4,
+	                    itemsToScroll: 4
+	                }
 				}        
 			});
 			
