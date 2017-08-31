@@ -35,24 +35,24 @@
 				<div class="col-md-12">					
 					<nav class="navbar navbar-default">
 						<div class="container-fluid nav-bar">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-									<a href="index.html"><img src="img/logo.png" alt="" class="img-responsive logo"></a>
-								</div>
-								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav navbar-right">
-										<li><a href="#inicio">Inicio</a></li>
-										<li><a href="#nosotros">Nosotros</a></li>
-										<li><a href="#servicios">Servicios</a></li>
-										<li><a href="#clientes">Clientes</a></li>
-										<li><a href="#contacto">Contacto</a></li>
-									</ul>
-								</div>
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a href="index.html"><img src="img/logo.png" alt="" class="img-responsive logo"></a>
+							</div>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#inicio">Inicio</a></li>
+									<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#nosotros">Nosotros</a></li>
+									<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#servicios">Servicios</a></li>
+									<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#clientes">Clientes</a></li>
+									<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contacto">Contacto</a></li>
+								</ul>
+							</div>
 						</div>
 					</nav>
 				</div>
@@ -304,83 +304,86 @@
 	</section>
 	<!-- End contact us  Section -->
 	<section id="trabaja" class="bannertrabajo" >
-	<div class="bannertrabajo-bg">
-        <a href="" title="Envíenos sus datos">
-            <div class="cnt_work">
-                    <h3> Formá parte de nuestra Empresa...Trabajá con nosotros <span class="glyphicon glyphicon-list-alt"></span></h3>
-            </div> 
-        </a>
-		<div id="WorkWithUs">
-            <div class="wwu-content" style="opacity: 1;">
-                <div id="trabajar" class="work">
-                    <div class="close">X</div>
-                    <h2>Trabajá con nosotros</h2>
-                    <form id="contact-wwu-form" name="contact-wwu-form" method="post" enctype="multipart/form-data" onsubmit="submitWwuForm(this); return false;">
-                        <!-- <h3>Envíenos sus datos, así podemos conocerlo</h3> -->
-                        <span id="cartelError" class="oculto"></span>
-                        <div class="form-group">
-                            <input name="nombre" type="text" class="form-control name-field" placeholder="NOMBRE">
-                        </div>
-                        <div class="form-group">
-                            <input name="apellido" type="text" class="form-control name-field" placeholder="APELLIDO">
-                        </div>
-                        <div class="form-group">
-                            <label for="nacimiento" class="lbl-control-BornDate">Fecha de nacimiento:</label>
-                            <input name="nacimiento" id="nacimiento" type="date" class="form-control-BornDate" value="09/11/1986" placeholder="dd/mm/aaaa">
-                        </div>
-                        <div class="form-group">
-                            <input name="dni" type="number" class="form-control name-field" placeholder="NÚMERO DE DNI">
-                        </div>
-                        <div class="form-group">
-                            <input name="domicilio" type="text" class="form-control name-field" placeholder="DOMICILIO PARTICULAR (Dirección y localidad)">
-                        </div>
-                        <div class="form-group">
-                            <label for="area" class="lbl-control-Area">Área de interés:</label>
-                            <select name="area" id="area" class="form-control-slc-Area">
-                                    <option value="0" selected>Seleccione una opción</option>
-                                    <option value="1">Oficina administrativa</option>
-                                    <option value="2">Oficina técnica</option>
-                                    <option value="3">Oficina de calidad</option>
-                                    <option value="4">Recursos humanos</option>
-                                    <option value="5">Taller</option>
-                                    <option value="6">Soldadura</option>
-                                    <option value="7">Otra</option>
-                                    <option value="8">Cualquier área está bien</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input name="oficio" type="text" class="form-control name-field" placeholder="OFICIO / PROFESIÓN">
-                        </div>
-                        <div class="form-group">
-                            <input name="email" type="text" class="form-control name-field" placeholder="EMAIL">
-                        </div>
-                        <div class="form-group">
-                            <input name="telefono" type="text" class="form-control name-field" placeholder="TELÉFONO">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="antecedentes" class="form-control" rows="" placeholder="ANTECEDENTES" style="height:130px;"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="observaciones" class="form-control" rows="" placeholder="OBSERVACIONES" style="height:130px;"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="adjuntos">Adjuntar documentos:</label>
-                            <input name="adjunto" 
-                                type="file" 
-                                accept="text/plain, image/x-ms-bmp, image/x-png, image/jpeg,image/gif, application/pdf, application/msword, application/msexcel" 
-                                multiple="" 
-                                class="btn btn-file">
-                        </div>
-                        <div class="form-group">
-                            <div style="text-align:right;">
-                                <input name="enviar" type="submit" value="Enviar" class="btn btn-primary" >
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>   
-    </div>
+		<div class="bannertrabajo-bg">
+	        <a href="" title="Envíenos sus datos">
+	            <div class="cnt_work">
+                    <h3> 
+                    	Formá parte de nuestra Empresa...Trabajá con nosotros 
+                    	<span class="glyphicon glyphicon-list-alt"></span>
+                	</h3>
+	            </div> 
+	        </a>
+			<div id="WorkWithUs">
+	            <div class="wwu-content" style="opacity: 1;">
+	                <div id="trabajar" class="work">
+	                    <div class="close">X</div>
+	                    <h2>Trabajá con nosotros</h2>
+	                    <form id="contact-wwu-form" name="contact-wwu-form" method="post" enctype="multipart/form-data" onsubmit="submitWwuForm(this); return false;">
+	                        <!-- <h3>Envíenos sus datos, así podemos conocerlo</h3> -->
+	                        <span id="cartelError" class="oculto"></span>
+	                        <div class="form-group">
+	                            <input name="nombre" type="text" class="form-control name-field" placeholder="NOMBRE">
+	                        </div>
+	                        <div class="form-group">
+	                            <input name="apellido" type="text" class="form-control name-field" placeholder="APELLIDO">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="nacimiento" class="lbl-control-BornDate">Fecha de nacimiento:</label>
+	                            <input name="nacimiento" id="nacimiento" type="date" class="form-control-BornDate" value="09/11/1986" placeholder="dd/mm/aaaa">
+	                        </div>
+	                        <div class="form-group">
+	                            <input name="dni" type="number" class="form-control name-field" placeholder="NÚMERO DE DNI">
+	                        </div>
+	                        <div class="form-group">
+	                            <input name="domicilio" type="text" class="form-control name-field" placeholder="DOMICILIO PARTICULAR (Dirección y localidad)">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="area" class="lbl-control-Area">Área de interés:</label>
+	                            <select name="area" id="area" class="form-control-slc-Area">
+	                                    <option value="0" selected>Seleccione una opción</option>
+	                                    <option value="1">Oficina administrativa</option>
+	                                    <option value="2">Oficina técnica</option>
+	                                    <option value="3">Oficina de calidad</option>
+	                                    <option value="4">Recursos humanos</option>
+	                                    <option value="5">Taller</option>
+	                                    <option value="6">Soldadura</option>
+	                                    <option value="7">Otra</option>
+	                                    <option value="8">Cualquier área está bien</option>
+	                            </select>
+	                        </div>
+	                        <div class="form-group">
+	                            <input name="oficio" type="text" class="form-control name-field" placeholder="OFICIO / PROFESIÓN">
+	                        </div>
+	                        <div class="form-group">
+	                            <input name="email" type="text" class="form-control name-field" placeholder="EMAIL">
+	                        </div>
+	                        <div class="form-group">
+	                            <input name="telefono" type="text" class="form-control name-field" placeholder="TELÉFONO">
+	                        </div>
+	                        <div class="form-group">
+	                            <textarea name="antecedentes" class="form-control" rows="" placeholder="ANTECEDENTES" style="height:130px;"></textarea>
+	                        </div>
+	                        <div class="form-group">
+	                            <textarea name="observaciones" class="form-control" rows="" placeholder="OBSERVACIONES" style="height:130px;"></textarea>
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="adjuntos">Adjuntar documentos:</label>
+	                            <input name="adjunto" 
+	                                type="file" 
+	                                accept="text/plain, image/x-ms-bmp, image/x-png, image/jpeg,image/gif, application/pdf, application/msword, application/msexcel" 
+	                                multiple="" 
+	                                class="btn btn-file">
+	                        </div>
+	                        <div class="form-group">
+	                            <div style="text-align:right;">
+	                                <input name="enviar" type="submit" value="Enviar" class="btn btn-primary" >
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>   
+	    </div>
 	</section>
 	<!-- start located map Section -->
 	<section id="ltd_map_sec">
@@ -401,15 +404,14 @@
 		</div>
 	</section>
 	<!-- End located map  Section -->
-
 	<footer class="footer text-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12" style="padding-top: 30px">
-						<p>Copyright &copy; 2017 <a href="#">Ingeser SRL</a></p>
-					</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" style="padding-top: 30px">
+					<p>Copyright &copy; 2017 <a href="#">Ingeser SRL</a></p>
 				</div>
 			</div>
+		</div>
 	</footer>
 	
 	<!-- script tags
@@ -425,7 +427,7 @@
 	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 
 	<!-- Google Map js -->
-		<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB7gKjDEqOVxAuvD56wMlmRojcv9c_N7h8"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB7gKjDEqOVxAuvD56wMlmRojcv9c_N7h8"></script>
 	<script>
 		function initialize() {
 			var mapOptions = {
@@ -447,137 +449,129 @@
 	<script src="js/showHide.js" type="text/javascript"></script>
 
 	<script type="text/javascript">
-
-	$(document).ready(function(){
-
-
-		 $('.show_hide').showHide({			 
-			speed: 1000,  // speed you want the toggle to happen	
-			easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
-			changeText: 1, // if you dont want the button text to change, set this to 0
-			showText: '<i class="fa fa-angle-down"></i>',// the button text to show when a div is closed
-			hideText: '<i class="fa fa-angle-up"></i>' // the button text to show when a div is open
-						 
+		$(document).on('click','.navbar-toggle',function(e) {
+		    ShowTopHeader();
 		});
 
-		 $(".cnt_work").click(function(e){
-					e.preventDefault();
-					document.getElementById("ltd_map_sec").style.zIndex = "-1";
-					document.getElementById("servicios").style.zIndex = "-1";
-					if(window.matchMedia("(max-width: 570px)").matches) {
-						$("#trabajar")
+		$(document).ready(function(){
 
-						$('#trabajar').addClass('mediawork');
-						$('#trabajar').removeClass('work');
-					}
-					
-					$("#WorkWithUs").fadeIn(300,function(){$(this).focus();});
+			$('.show_hide').showHide({			 
+				speed: 1000,  // speed you want the toggle to happen	
+				easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+				changeText: 1, // if you dont want the button text to change, set this to 0
+				showText: '<i class="fa fa-angle-down"></i>',// the button text to show when a div is closed
+				hideText: '<i class="fa fa-angle-up"></i>' // the button text to show when a div is open
+			});
+
+			$(".cnt_work").click(function(e){
+				e.preventDefault();
+				document.getElementById("ltd_map_sec").style.zIndex = "-1";
+				document.getElementById("servicios").style.zIndex = "-1";
+				if(window.matchMedia("(max-width: 570px)").matches) {
+					$('#trabajar').addClass('mediawork');
+					$('#trabajar').removeClass('work');
+				}
+
+				$("#WorkWithUs").fadeIn(300,function(){
+					$(this).focus();
+				});
 			});
 
 			$('.close').click(function() {
-				 $("#WorkWithUs").fadeOut(300);
-				 document.getElementById("servicios").style.zIndex = "auto";
+				$("#WorkWithUs").fadeOut(300);
+				document.getElementById("servicios").style.zIndex = "auto";
 			});
 
 			$("#WorkWithUs").on('blur',function(){
-					$(this).fadeOut(300);
+				$(this).fadeOut(300);
 			});
-	});
+		});
 
-	function submitForm(oFormElement){		
-		var xhr = new XMLHttpRequest();
-		xhr.onload = function(){
-				var frm = document.getElementById("contact-form");
-				frm.reset();
-				alert("Gracias por su consulta, nos pondremos en contacto a la brevedad.");
-		};
-		$action="sendContactEmail.php";
-		xhr.open (oFormElement.method, $action, true);
-		xhr.send (new FormData (oFormElement));
-	};
-
-	function submitWwuForm(oFormElement){
+		function submitForm(oFormElement){		
 			var xhr = new XMLHttpRequest();
 			xhr.onload = function(){
-							var frm = document.getElementById("contact-wwu-form");
-							frm.reset();
-							$("#WorkWithUs").fadeOut(300);
-							alert("Gracias por contactarte con nosotros, nos pondremos en contacto a la brevedad.");
+					var frm = document.getElementById("contact-form");
+					frm.reset();
+					alert("Gracias por su consulta, nos pondremos en contacto a la brevedad.");
+			};
+			$action="sendContactEmail.php";
+			xhr.open (oFormElement.method, $action, true);
+			xhr.send (new FormData (oFormElement));
+		};
+
+		function submitWwuForm(oFormElement){
+			var xhr = new XMLHttpRequest();
+			xhr.onload = function(){
+				var frm = document.getElementById("contact-wwu-form");
+				frm.reset();
+				$("#WorkWithUs").fadeOut(300);
+				alert("Gracias por contactarte con nosotros, nos pondremos en contacto a la brevedad.");
 			};
 			$action="SendWwuContactEmail.php";
 			xhr.open (oFormElement.method, $action, true);
 			xhr.send (new FormData (oFormElement));
-	}
+		}
 	</script>
 
+	<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel();
 
-
-<script type="text/javascript">
-
-$(window).load(function() {
-		$("#flexiselDemo1").flexisel();
-
-		$("#flexiselDemo2").flexisel({
+			$("#flexiselDemo2").flexisel({
 				visibleItems: 4,
 				itemsToScroll: 3,
 				animationSpeed: 200,
 				infinite: true,
 				navigationTargetSelector: null,
 				autoPlay: {
-						enable: false,
-						interval: 5000,
-						pauseOnHover: true
+					enable: false,
+					interval: 5000,
+					pauseOnHover: true
 				},
 				responsiveBreakpoints: { 
-						portrait: { 
-								changePoint:480,
-								visibleItems: 1,
-								itemsToScroll: 1
-						}, 
-						landscape: { 
-								changePoint:640,
-								visibleItems: 2,
-								itemsToScroll: 2
-						},
-						tablet: { 
-								changePoint:768,
-								visibleItems: 3,
-								itemsToScroll: 3
-						}
+					portrait: { 
+							changePoint:480,
+							visibleItems: 1,
+							itemsToScroll: 1
+					}, 
+					landscape: { 
+							changePoint:640,
+							visibleItems: 2,
+							itemsToScroll: 2
+					},
+					tablet: { 
+							changePoint:768,
+							visibleItems: 3,
+							itemsToScroll: 3
+					}
 				},
 				loaded: function(object) {
-						console.log('Slider loaded...');
+					console.log('Slider loaded...');
 				},
 				before: function(object){
-						console.log('Before transition...');
+					console.log('Before transition...');
 				},
 				after: function(object) {
-						console.log('After transition...');
+					console.log('After transition...');
 				}
-		});
-		
-		$("#flexiselDemo3").flexisel({
+			});
+			
+			$("#flexiselDemo3").flexisel({
 				visibleItems: 6,
-				itemsToScroll: 1,         
+				itemsToScroll: 1,
 				autoPlay: {
 						enable: true,
 						interval: 1500,
 						pauseOnHover: false
 				}        
-		});
-		
-		$("#flexiselDemo4").flexisel({
+			});
+			
+			$("#flexiselDemo4").flexisel({
 				infinite: false     
-		});    
-		
-});
-</script>
-
-
-
-
-
-		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+			});    	
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous">
+	</script>
 </body>
 </html>

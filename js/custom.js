@@ -60,9 +60,23 @@ jQuery(document).ready(function() {
           jQuery(".top-header").css({"background": "transparent",});
            jQuery(".top-header img.logo").css({"margin-top": "-30px", "margin-bottom": "25px"});
            jQuery(".nav-bar").css({"margin-top": "28px"});
-          
         }
      });
-	
-
 });
+
+function ShowTopHeader(){
+  var windowScrollPosTop = jQuery(window).scrollTop();
+
+  if(windowScrollPosTop < 150){
+    if ($('.top-header').css('backgroundColor') == "rgba(0, 0, 0, 0)") {
+      jQuery(".top-header").css({"background": "#f6f6f6",});
+      jQuery(".top-header img.logo").css({"margin-top": "-30px", "margin-bottom": "15px"});
+      jQuery(".nav-bar").css({"margin-top": "6px",});
+    }
+    else{
+      jQuery(".top-header").css({"background": "transparent",});
+      jQuery(".top-header img.logo").css({"margin-top": "-30px", "margin-bottom": "25px"});
+      jQuery(".nav-bar").css({"margin-top": "28px"});
+    }
+  }
+}
