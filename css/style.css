@@ -140,7 +140,7 @@ ul.nav{
 	background-color: rgba(100,100,100,0.75);
 	transition: .5s;
 
-		padding-top: 10px;
+	padding-top: 10px;
 	padding-left: 15px;
 	padding-bottom: 15px;
 	padding-right: 15px;
@@ -168,7 +168,6 @@ ul.nav{
 
 /*banner project*/
 .banner_proj{
-	background: url(../img/p3.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
@@ -178,17 +177,17 @@ ul.nav{
 }
 .banner_proj_bg-color
 {
-	background-color: RGBA(200,200,200, 0.60);
+	background-color: RGBA(200,200,200, 0.30);
 	min-height: 500px;
 }
 
 .banner_proj h1{
 	margin-top: 250px;
-	font-size: 50px;
+	font-size: 10em;
 	font-weight: bold;
 	text-align:center;
 	vertical-align: 50%;
-	color: #000;
+	color: #fff;
 }
 
 .details_proj {
@@ -353,6 +352,45 @@ ul.nav{
     margin-top: 30px;
 }
 .details h2{
+	margin-bottom: 10px;
+	color: #151515;
+}
+
+
+/*details departamentos area*/
+.details_dep {
+	height: 450px;
+	padding-top: 5em;
+	padding-bottom: 10em;
+	background:#989898;
+}
+.details_dep p{
+	font-size: 2.8em;
+	color: #151515;
+	margin-top: 20px;
+}
+.details_dep ul{
+	margin: 0;
+	padding: 0;
+}
+.details_dep ul li{
+	font-size: 18px;
+	color: #151515;
+}
+.details_dep ul li i.fa{
+	font-size: 20px;
+	color: #151515;
+	height: 30px;
+	width: 30px;
+}
+.details_dep h1{
+	font-size: 6em;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+.details_dep h2{
 	margin-bottom: 10px;
 	color: #151515;
 }
@@ -1274,8 +1312,9 @@ textarea {
 
 /* css del slider de clientes*/
 .clearout {
-	height:20px;
+	height:30px;
 	clear:both;
+	vertical-align: middle;
 }
 
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
@@ -1308,12 +1347,13 @@ display:none;
     line-height:0px;
 }
 .nbs-flexisel-item img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 200px;
+    max-height: 150px;
     cursor: pointer;
     position: relative;
     margin-top: 20px;
     margin-bottom: 10px;
+
 }
 
 /*** Seccion contactos ***/

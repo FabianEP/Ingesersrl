@@ -148,6 +148,7 @@ svg {
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
   will-change: transform;
 }
 .slide:nth-child(1) {
