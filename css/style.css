@@ -119,6 +119,26 @@ ul.nav{
 .navbar-default .navbar-toggle {
   border-color: #000;
 }
+/* Us */
+.compromise {
+	margin-left: 4em;
+}
+
+.compromise li:before {
+    content:"·";
+    font-size:3em;
+    vertical-align:middle;
+    line-height:0.5em;
+}
+
+.compromise li {
+	font-size: 2.5em;
+    margin-top: 15px;
+    color: #D8D8D8;
+    margin-left: 1em;
+    text-indent: -1em;
+}
+
 /*banner trabajo area*/
 
 .bannertrabajo{
@@ -1303,8 +1323,8 @@ textarea {
 	width: auto;
   	height: auto;
   	padding-bottom: 20px;
-  	overflow-x: hidden;
 }
+
 .section-padding
 {
 	padding: 0px 0px;
@@ -1312,9 +1332,8 @@ textarea {
 
 /* css del slider de clientes*/
 .clearout {
-	height:30px;
+    height: 20em;
 	clear:both;
-	vertical-align: middle;
 }
 
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
@@ -1324,7 +1343,10 @@ display:none;
 .nbs-flexisel-container {
     position:relative;
     max-width:100%;
+    overflow: hidden;
+    display: inherit;
 }
+
 .nbs-flexisel-ul {
     position:relative;
     width:99999px;
@@ -1335,7 +1357,7 @@ display:none;
 }
 
 .nbs-flexisel-inner {
- 
+ 	margin-top: 10em;
 }
 
 .nbs-flexisel-item {
@@ -1351,9 +1373,9 @@ display:none;
     max-height: 150px;
     cursor: pointer;
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 10px;
-
+   	left: 50%;
+   	top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 /*** Seccion contactos ***/
