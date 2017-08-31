@@ -1112,6 +1112,20 @@ color : #3399FF;
   margin: 0;
 }
 
+#servicios .slide_img_link {
+   pointer-events: none;
+   text-decoration: none;
+   color: inherit;
+}
+
+@media (max-width: 767px) {
+	#servicios .slide_img_link {
+	   pointer-events: auto;
+	   text-decoration: none;
+	   color: inherit;
+	}
+}
+
 /* Modals
 ---------------------------------- */
 .modal-content {

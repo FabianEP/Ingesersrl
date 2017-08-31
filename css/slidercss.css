@@ -135,6 +135,14 @@ svg {
   height: 100%;
   overflow: hidden;
 }
+.small {
+  height: initial;
+  overflow: initial;
+}
+.item.small img {
+  margin-bottom: initial;
+}
+
 .slide.active .slide__overlay,
 .slide.active .slide__text {
   opacity: 1;
