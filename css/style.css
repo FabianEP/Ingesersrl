@@ -48,6 +48,12 @@ h2{
 	overflow: hidden;
 }
 
+.container.section {
+	display: inline-block;
+	background: inherit;
+	width: 100%;
+}
+
 
 @keyframes slider{
 	to {
@@ -208,6 +214,13 @@ ul.nav{
 	text-align:center;
 	vertical-align: 50%;
 	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.banner_proj h1 {
+		font-size: 7em;
+		margin: 5em 0.5em 0 0.5em;
+	}
 }
 
 .details_proj {
@@ -383,34 +396,45 @@ ul.nav{
 	padding-top: 5em;
 	padding-bottom: 10em;
 	background:#989898;
+	display: inline-block;
 }
-.details_dep p{
+.details_dep2 {
+    background: #989898;
+}
+
+.details_dep p,
+.details_dep2 p {
 	font-size: 2.8em;
 	color: #151515;
 	margin-top: 20px;
 }
-.details_dep ul{
+.details_dep ul,
+.details_dep2 ul {
 	margin: 0;
 	padding: 0;
 }
-.details_dep ul li{
+.details_dep ul li,
+.details_dep2 ul li {
 	font-size: 18px;
 	color: #151515;
 }
-.details_dep ul li i.fa{
+.details_dep ul li i.fa,
+.details_dep2 ul li i.fa {
 	font-size: 20px;
 	color: #151515;
 	height: 30px;
 	width: 30px;
 }
-.details_dep h1{
+.details_dep h1,
+.details_dep2 h1 {
 	font-size: 6em;
     color: #1a1a1a;
     font-weight: 600;
     margin-bottom: 25px;
     margin-top: 30px;
 }
-.details_dep h2{
+.details_dep h2, 
+.details_dep2 h2 {
 	margin-bottom: 10px;
 	color: #151515;
 }
@@ -1310,8 +1334,15 @@ textarea {
 }
 .section {
     position: relative;
-    padding: 88px 0 67px 0;
+    padding: 5em 0 2em 0;
     display: block;
+}
+
+@media (max-width: 780px) 
+{
+	.section {
+	    padding: 5em 0 2em 0;
+	}
 }
 
 .cta-txt {

@@ -138,6 +138,8 @@ svg {
 .small {
   height: initial;
   overflow: initial;
+  display: inline-block;
+  position: relative;
 }
 .item.small img {
   margin-bottom: initial;
