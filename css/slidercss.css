@@ -135,6 +135,11 @@ svg {
   height: 100%;
   overflow: hidden;
 }
+
+.slide.mecanico{
+  background-image: url(../img/mecanica-d.jpg);
+}
+
 .small {
   height: initial;
   overflow: initial;
