@@ -160,6 +160,13 @@ svg {
   height: auto;
 }
 
+@media (max-width: 991px) {
+  .small>.carousel-inner>.item img {
+    max-height:280px;
+
+  }
+}
+
 .slide.active .slide__overlay,
 .slide.active .slide__text {
   opacity: 1;
