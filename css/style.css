@@ -1354,17 +1354,17 @@ textarea {
     
     font-size: 5rem;
     font-weight: 700;
-    color: #fff;
+    color: #000;
 }
 .cta-txt p
 {
 	font-size: 1.8rem;
-	color: #fff;
+	color: #000;
 }
 
 .bg-color-cli
 {
-	background-color: RGBA(200, 200, 200, 0.8);
+	background-color: RGBA(200, 200, 200, 0.85);
 	width: auto;
   	height: auto;
   	padding-bottom: 20px;
