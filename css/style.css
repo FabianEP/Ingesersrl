@@ -1560,12 +1560,13 @@ a, a:hover
 
 /* Section Navs */
 .nav-section {
-    background: #f5f5f3;
+    background: #eee;
     min-height: 53px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     text-align: center;
 }
+
 .nav-section div.item {
     transform: translateY(25%);
     min-height: 53px;
@@ -1575,8 +1576,29 @@ a, a:hover
 	.nav-section {
 		display: inline-block;
 	}
-	
+
 	.nav-section .col-xs-4 {
 		width: 100%;
 	}
+}
+
+/* Topics */
+.topic {
+	margin-left: 4em;
+}
+
+.topic li:before {
+    content: "·";
+    font-size: 2.0em;
+    vertical-align: middle;
+    line-height: 0.01em;
+    margin-right: 0.2em;
+}
+
+.topic li {
+	font-size: 2.5em;
+    margin-top: 5px;
+    color: #D8D8D8;
+    margin-left: 1em;
+    text-indent: -1em;
 }

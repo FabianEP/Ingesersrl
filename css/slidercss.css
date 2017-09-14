@@ -142,12 +142,22 @@ svg {
 
 .small {
   height: initial;
-  overflow: initial;
   display: inline-block;
   position: relative;
 }
-.item.small img {
-  margin-bottom: initial;
+.small>.carousel-inner>.item .img-content {
+  display: table;
+  margin: 0 auto;
+  max-height:480px;
+  overflow: hidden;
+}
+
+.small>.carousel-inner>.item img {
+  margin:initial;
+  display: block;
+  max-height:500px;
+  width: auto;
+  height: auto;
 }
 
 .slide.active .slide__overlay,
