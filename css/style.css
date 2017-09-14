@@ -1557,3 +1557,10 @@ a, a:hover
     line-height: 32px;
     color: #000;
 }
+
+/* Section Navs */
+.nav-section {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}

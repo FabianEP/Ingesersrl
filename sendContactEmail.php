@@ -1,26 +1,36 @@
 <?php
-	require_once('config.php');
-	require_once(__DIR__.'\classes\EmailHelper.php');
-	require_once(__DIR__.'\libraries\LogManager.php');
+	try
+	{
+		require_once('config.php');
+		require_once(__DIR__.'\classes\EmailService.php');
+		require_once(__DIR__.'\libraries\LogManager.php');
 
-	$logManager = new LogManager();
-	$result = false;
+		$logManager = new LogManager();
+		$result = false;
 
-	if (!empty($_POST)){
+		if (!empty($_POST)){
 
-		$emailHelper = new EmailHelper();
+			$emailService = new EmailService();
 
-		if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
-		{
-			$result = $emailHelper->sendEmail($_POST['name'], $_POST['email'], $_POST['message']);
-		}
+			if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
+			{
+				$subject = EMAIL_CONTACT_SUBJECT;
 
-		if (isset($result) && !$result){
-			$logManager->appendfile("EmailContact", var_dump($emailHelper->errors));
+				$body = 'Mensaje de '. $_POST['name'] .' ('. $_POST['email'] .'), <br> '. $_POST['message'];
+
+				$result = $emailService->SendContactEmail($subject, $body);
+			}
+
+			if (isset($result) && !$result){
+				foreach ($emailService->errors as $message) {
+					$err_msg = "Email contact error: " . $message;
+					$logManager->appendfileV2("EmailContact", $err_msg);
+				}
+			}
 		}
 	}
-	else {
-		$logManager->appendfile("EmailContact", "No hay post");
+	catch(Exception $e)
+	{
+		$logManager->appendfileV2("EmailContact", $e->getMessage());
 	}
-
 ?>

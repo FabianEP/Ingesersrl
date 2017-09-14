@@ -169,7 +169,7 @@ svg {
   background-image: url(../img/energia.jpg);
 }
 .slide:nth-child(1) .slide__overlay-path {
-  fill: #e99c7e;
+  fill: #737373;
 }
 @media (max-width: 991px) {
   .slide:nth-child(1) .slide__text {
@@ -184,7 +184,7 @@ svg {
   background-image: url(../img/mecanica.jpg);
 }
 .slide:nth-child(2) .slide__overlay-path {
-  fill: #e1ccae;
+  fill: #737373;
 }
 @media (max-width: 991px) {
   .slide:nth-child(2) .slide__text {
@@ -199,7 +199,7 @@ svg {
   background-image: url(../img/civil.jpg);
 }
 .slide:nth-child(3) .slide__overlay-path {
-  fill: #adc5cd;
+  fill: #737373;
 }
 @media (max-width: 991px) {
   .slide:nth-child(3) .slide__text {

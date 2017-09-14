@@ -24,18 +24,21 @@
  *
  */
 define("EMAIL_USE_SMTP", true);
-define("EMAIL_SMTP_HOST", "smtp.gmail.com");
+define("EMAIL_SMTP_HOST", "mail.ingesersrl.com.ar");
+define("EMAIL_SMTP_USERNAME", "web@ingesersrl.com.ar");
+define("EMAIL_SMTP_PASSWORD", "Ready2test");
 define("EMAIL_SMTP_AUTH", true);
-define("EMAIL_SMTP_USERNAME", "contactocajasar@gmail.com");
-define("EMAIL_SMTP_PASSWORD", "readytotest");
 define("EMAIL_SMTP_PORT", 587);
 define("EMAIL_SMTP_ENCRYPTION", "tls");
+
+define("EMAIL_CONTACT_USERNAME", "Contacto@ingesersrl.com.ar");
+define("EMAIL_RRHH_USERNAME", "rrhh@ingesersrl.com.ar");
 
 /**
  * Configuration for: email contact
  */
-define("EMAIL_CONTACT_FROM", "no-reply@example.com");
-define("EMAIL_CONTACT_FROM_NAME", "Ingeser SRL");
+define("EMAIL_NO_REPLY", "no-reply@example.com");
+define("EMAIL_NO_REPLY_NAME", "Ingeser SRL");
 define("EMAIL_CONTACT_SUBJECT", "Contacto");
 define("EMAIL_WORK_SUBJECT", "Contacto de trabajo de:");
 

@@ -34,7 +34,7 @@ class LogManager
     }
 
     private function openfile(){        
-        $tmp_faile = GetFilePath();
+        $tmp_faile = $this->GetFilePath();
 
         return fopen($tmp_faile, 'a+');
     }
@@ -43,7 +43,7 @@ class LogManager
     
         $afile = $this->openfile();
 
-        $fullmessage = GetFullMessage($domine, $message);
+        $fullmessage = $this->GetFullMessage($domine, $message);
 
         if ($afile){
             fwrite($afile, $fullmessage);
