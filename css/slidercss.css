@@ -140,6 +140,14 @@ svg {
   background-image: url(../img/mecanica-d.jpg);
 }
 
+.slide.energia{
+  background-image: url(../img/energia-d.jpg);
+}
+
+.slide.civil{
+  background-image: url(../img/civil-d.jpg);
+}
+
 .small {
   height: initial;
   display: inline-block;
@@ -156,6 +164,7 @@ svg {
   margin:initial;
   display: block;
   max-height:500px;
+  max-width: 750px; 
   width: auto;
   height: auto;
 }
