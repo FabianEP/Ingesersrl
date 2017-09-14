@@ -1560,7 +1560,23 @@ a, a:hover
 
 /* Section Navs */
 .nav-section {
+    background: #f5f5f3;
+    min-height: 53px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     text-align: center;
+}
+.nav-section div.item {
+    transform: translateY(25%);
+    min-height: 53px;
+}
+
+@media (max-width: 767px) {
+	.nav-section {
+		display: inline-block;
+	}
+	
+	.nav-section .col-xs-4 {
+		width: 100%;
+	}
 }
