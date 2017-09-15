@@ -39,8 +39,7 @@ class LogManager
         return fopen($tmp_faile, 'a+');
     }
 
-    public function appendfile($domine, $message){
-    
+    public function appendfile($domine, $message) {
         $afile = $this->openfile();
 
         $fullmessage = $this->GetFullMessage($domine, $message);
@@ -53,8 +52,9 @@ class LogManager
     }
 
     public function appendfileV2($domine, $message)
-    {       
-        file_put_contents($this->GetFilePath(), $this->GetFullMessage($domine, $message), FILE_APPEND | LOCK_EX);
+    {     
+        return;  
+        //file_put_contents($this->GetFilePath(), $this->GetFullMessage($domine, $message), FILE_APPEND | LOCK_EX);
     }
 }
 ?>

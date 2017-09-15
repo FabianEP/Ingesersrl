@@ -1,36 +1,31 @@
 <?php
-	try
-	{
-		require_once('config.php');
-		require_once(__DIR__.'\classes\EmailService.php');
-		require_once(__DIR__.'\libraries\LogManager.php');
 
-		$logManager = new LogManager();
-		$result = false;
+	require_once('config.php');
+	require_once(__DIR__.'\classes\EmailService.php');
+	require_once(__DIR__.'\libraries\LogManager.php');
 
-		if (!empty($_POST)){
+	$logManager = new LogManager();
+	$result = false;
 
-			$emailService = new EmailService();
+	if (!empty($_POST)){
 
-			if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
-			{
-				$subject = EMAIL_CONTACT_SUBJECT;
+		$emailService = new EmailService();
 
-				$body = 'Mensaje de '. $_POST['name'] .' ('. $_POST['email'] .'), <br> '. $_POST['message'];
+		if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
+		{
+			$subject = EMAIL_CONTACT_SUBJECT;
 
-				$result = $emailService->SendContactEmail($subject, $body);
-			}
+			$body = 'Mensaje de '. $_POST['name'] .' ('. $_POST['email'] .'), <br> '. $_POST['message'];
 
-			if (isset($result) && !$result){
-				foreach ($emailService->errors as $message) {
-					$err_msg = "Email contact error: " . $message;
-					$logManager->appendfileV2("EmailContact", $err_msg);
-				}
+			$result = $emailService->SendContactEmail($subject, $body);
+		}
+
+		if (isset($result) && !$result){
+			foreach ($emailService->errors as $message) {
+				$err_msg = "Email contact error: " . $message;
+				echo $err_msg;
+				$logManager->appendfileV2("EmailContact", $err_msg);
 			}
 		}
-	}
-	catch(Exception $e)
-	{
-		$logManager->appendfileV2("EmailContact", $e->getMessage());
 	}
 ?>
