@@ -31,7 +31,7 @@ define("EMAIL_SMTP_AUTH", true);
 define("EMAIL_SMTP_PORT", 587);
 define("EMAIL_SMTP_ENCRYPTION", "tls");
 
-define("EMAIL_CONTACT_USERNAME", "Contacto@ingesersrl.com.ar");
+define("EMAIL_CONTACT_USERNAME", "contacto@ingesersrl.com.ar");
 define("EMAIL_RRHH_USERNAME", "rrhh@ingesersrl.com.ar");
 
 /**
