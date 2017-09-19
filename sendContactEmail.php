@@ -1,8 +1,8 @@
 <?php
 
 	require_once('config.php');
-	require_once(__DIR__.'\classes\EmailService.php');
-	require_once(__DIR__.'\libraries\LogManager.php');
+	require_once('\classes\EmailService.php');
+	require_once('\libraries\LogManager.php');
 
 	$logManager = new LogManager();
 	$result = false;
