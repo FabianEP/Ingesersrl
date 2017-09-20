@@ -3,7 +3,7 @@
 </head>
 <body>
 <?php
-require_once(__DIR__.'\libraries\LogManager.php');
+require_once('libraries/LogManager.php');
 
 echo "Instance log Manager </br>";
 $logManager = new LogManager();

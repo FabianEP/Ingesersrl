@@ -5,7 +5,7 @@ class LogManager
 
     private $pre_name = 'log_';
 
-    private $rootdirectorie = __DIR__;
+    private $rootdirectorie = "../public_html";
 
     private $logdirectorie = "logs";
 
@@ -19,7 +19,7 @@ class LogManager
         
         $filename = $this->pre_name . $date->format('Ymd');
         
-        $tmp_faile = $this->rootdirectorie .'\..\\'. $this->logdirectorie .'\\'.$filename .'.txt';
+        $tmp_faile = $this->rootdirectorie .'/'. $this->logdirectorie .'/'.$filename .'.txt';
 
         return $tmp_faile;
     }

@@ -1,5 +1,5 @@
 <?php
-require_once('\..\libraries\PHPMailer.php');
+require_once('../public_html/libraries/PHPMailer.php');
 
 class EmailHelper {
     /**

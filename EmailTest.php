@@ -1,9 +1,9 @@
 <?php
 
 	define("EMAIL_USE_SMTP", true);
-	define("EMAIL_SMTP_HOST", "smtp.gmail.com");
-	define("EMAIL_SMTP_USERNAME", "contactocajasar@gmail.com");
-	define("EMAIL_SMTP_PASSWORD", "readytotest");
+	define("EMAIL_SMTP_HOST", "mail.ingesersrl.com.ar");
+	define("EMAIL_SMTP_USERNAME", "web@ingesersrl.com.ar");
+	define("EMAIL_SMTP_PASSWORD", "Ready2test");
 	define("EMAIL_SMTP_AUTH", true);
 	define("EMAIL_SMTP_PORT", 587);
 	define("EMAIL_SMTP_ENCRYPTION", "tls");
@@ -18,8 +18,8 @@
 	define("EMAIL_NO_REPLY_NAME", "Ingeser SRL");
 	define("EMAIL_CONTACT_SUBJECT", "Contacto");
 	define("EMAIL_WORK_SUBJECT", "Contacto de trabajo de:");
-
-	require_once('\classes\EmailService.php');
+	
+require_once("classes/EmailService.php");
 
 	$result = false;
 
@@ -33,7 +33,7 @@
 
 	if (isset($result) && !$result){
 		foreach ($emailService->errors as $message) {
-			$err_msg = "Email contact error: " . $message;
+			$err_msg = "Email contact error:: " . $message[0] . "<br>";
 			echo $err_msg;
 		}
 	}
@@ -41,6 +41,4 @@
 	{
 		echo "Mail Sent <br>";
 	}
-
-	echo "end";
 ?>

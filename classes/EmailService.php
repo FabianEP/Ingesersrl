@@ -1,5 +1,5 @@
 <?php
-require_once('\EmailHelper.php');
+require_once('../public_html/classes/EmailHelper.php');
 
 class EmailService {
 	/**
